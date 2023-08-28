@@ -1,7 +1,7 @@
 ---
-title: "Untitled"
-publishedAt: 2023-05-24
-description: "Lorem ipsum dolor sit amet consectetur et ultrices blandit neque ege"
+title: "The Beginning"
+publishedAt: 2023-08-27
+description: "Leaving trails of me behind."
 slug: "untitled"
 isPublish: true
 ---
