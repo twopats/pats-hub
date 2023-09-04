@@ -1,0 +1,30 @@
+---
+import { PortalData } from "@/data/portals";
+
+type Props = {
+  title: string;
+  titleColor: string;
+  bgPath: string;
+  externalLink: string;
+  extraStyling?: string;
+};
+
+const { bgPath, title, titleColor, externalLink, extraStyling } = Astro.props;
+---
+
+<a
+  target="_blank"
+  href={externalLink}
+  class="group relative overflow-hidden rounded-xl border border-transparent duration-200 hover:-translate-y-1 hover:translate-x-1 hover:border-blue-500 hover:brightness-125 hover:hue-rotate-90"
+>
+  <div
+    class={` cursor-pointer bg-cover active:opacity-0  w-52 h-72 aspect-video    base-transition    select-none  transition    bg-center   ` +
+      extraStyling}
+    style={`background-image: url(${bgPath})`}
+  >
+    <!-- <img src={bgPath} class="absolute w-full h-full bg-cover" alt=""> -->
+    <span class="absolute bottom-0 m-4 select-none text-sm font-bold uppercase"
+      >{title}</span
+    >
+  </div>
+</a>

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .section-title {
+    @apply text-lg text-neutral-100; 
+
+  }
+
+  .base-transition {
+    @appy transition duration-300 ease-out;
+  }
+  
+}
